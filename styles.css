@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+
+}
+
+body {
+    background-color: lightgray ;
+    height: 100vh;
+}
+
+.tarjeta {
+    margin: 0 auto;
+    background-color: rgb(253, 236, 153);
+    width: 900px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0 50px 50px 50px;
+    height: 90vh;   /* se pone al 90% del viewport disponible de su clase padre */ 
+    
+}
+
+p {
+    font-size: medium;
+    color: black;
+    padding: 0 20px 10px 20px;
+    border-width: 0px 0 0 0;
+    border-style: solid;
+}
+
+.contenedor_lista {
+    display: flex;
+}
+
+img {
+    margin-left: 18%;
+    width: 150px; /* Ajusta el tamaño de la imagen */
+}
+
+form {
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    width: 0px; /* Añade padding */
+}
+
+.consulta_parrafo {
+    display: flex; /* Alinea enseguida el botton, enseguida del texto */
+    width: 100%;
+    align-items: center; /* Alinea los elementos verticalmente conforme a su tamaño del contenido */
+}
+
+.pie_pagina {
+    background-color: lightblue;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: small;
+    border-style: solid;
+    border-width: 2px;
+}
+
+body, html {        /* Establece el tamaño de la página con escala 1:1 , es decir a ocupar toda la pantalla*/
+    margin: 0;      /* En conjunto con el tamaño de la Clase="tarjeta" */
+    padding: 0;
+}
+
+hr {
+    border: 2px solid black;
+    margin-top: 15px;
+    width: 900px;
+}
+
+#boton_agregar {
+    border-radius: 4px;
+    text-shadow: 1px 1px 15px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    background: #88dd77;
+    border: solid #000000 1px;
+    width: 3%; /* Cambiado a un valor más razonable */
+}

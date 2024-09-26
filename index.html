@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tarjeta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tarjeta">
+        <header>
+            <h1>SOBRE MI</h1>
+        </header>
+        <main>
+            <hr>
+            <div class="consulta_parrafo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis, in sequi reiciendis facilis ipsam ratione nisi. Rerum voluptates ea quaerat maxime perferendis esse. Sint, atque cum? Expedita, ab necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui, est eos, sed veniam nam minima, nobis suscipit doloribus beatae accusantium recusandae? Totam, deleniti optio error laboriosam commodi vel ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis vero, dolores a nam molestias sapiente. Eos aliquid adipisci fugiat, vel culpa quos mollitia assumenda quis iure. Excepturi, exercitationem illo.</p>                  
+                    
+                
+            </div>
+            <h2>Lista de pasatiempos</h2>
+            <div class="botones_dobles">
+                <input class="texto_agregar">
+                <button id="boton-agregar-01" class="boton-agregar">Agregar</button>
+            </div>
+            <div class="contenedor_lista">
+                
+                <ul class="lista_">
+                    <li>Leer</li>
+                    <li>Escuchar Música</li>
+                    <li>Ver Series</li>
+                    <li>Hacer Deporte</li>
+                    <li>Salir con los compas</li>
+                </ul>
+                <img src="assets/chopper.jpg">
+                
+            </div>
+            
+            <footer class="pie_pagina">
+                <h2>Hecho por: Ramiro A. TID31M</h2>
+            </footer>
+        </main>
+        
+    </div>
+
+    <script>
+        const botonAgregar = document.getElementById("boton-agregar-01");
+      const inputTarea = document.querySelector(".texto_agregar");
+
+      botonAgregar.addEventListener("click", () => {
+        const tarea = inputTarea.value;
+        
+        const listaTareas = document.querySelector(".lista_");
+        const nuevaTarea = document.createElement("li"); //<li></li>
+        nuevaTarea.textContent = tarea; //<li> valor del input</li>
+        
+        listaTareas.appendChild(nuevaTarea);
+        inputTarea.value = "";  
+        
+        // Solución
+        const items = document.querySelectorAll(".lista_ li"); // Seleccionamos todos los li
+        items.forEach((item, index) => {                        // dentro del bloque (elemento ul)
+          if (index % 2 === 0) {
+            item.style.color = "blue"; // Si el índice es par, azul
+          } else {
+            item.style.color = "black"; // Si el índice es impar, negro
+          }
+        });
+
+    });
+    </script>
+
+</body>
+
+
+</html>
