@@ -17,10 +17,13 @@
                     
                 
             </div>
+            <a href="pagina2.html">contacto</a>
             <h2>Lista de pasatiempos</h2>
             <div class="botones_dobles">
                 <input class="texto_agregar">
-                <button id="boton-agregar-01" class="boton-agregar">Agregar</button>
+                <button id="boton-agregar-01" class="boton-agregar" >Agregar</button>
+                <input type="date" placeholder="Fecha entrega" id="fecha-agregar">
+                <button id="boton-agregar-fecha"></button>
             </div>
             <div class="contenedor_lista">
                 
@@ -45,6 +48,8 @@
     <script>
         const botonAgregar = document.getElementById("boton-agregar-01");
         const inputTarea = document.querySelector(".texto_agregar");
+        const botonFecha = document.getElementById("boton-agregar-fecha")
+        const inputFecha = document.querySelector("fecha-agregar")
 
         const items = document.querySelectorAll(".lista_ li"); // Seleccionamos todos los li
         items.forEach((item, index) => {                        // dentro del bloque (elemento ul)
@@ -58,20 +63,20 @@
       botonAgregar.addEventListener("click", () => {
         const tarea = inputTarea.value;
         
-        const listaTareas = document.querySelector(".lista_");
         const nuevaTarea = document.createElement("li"); //<li></li>
         nuevaTarea.textContent = tarea; //<li> valor del input</li>
+        const nuevaFecha = document.createElement("li")
         
         listaTareas.appendChild(nuevaTarea);
         inputTarea.value = "";  
         
-        // Solución
+
         const items = document.querySelectorAll(".lista_ li"); // Seleccionamos todos los li
         items.forEach((item, index) => {                        // dentro del bloque (elemento ul)
           if (index % 2 === 0) {
-            item.style.color = "blue"; // Si el índice es par, azul
+            item.style.color = "blue"; 
           } else {
-            item.style.color = "black"; // Si el índice es impar, negro
+            item.style.color = "black"; 
           }
         });
 

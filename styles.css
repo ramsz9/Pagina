@@ -84,3 +84,11 @@ hr {
     border: solid #000000 1px;
     width: 3%; /* Cambiado a un valor más razonable */
 }
+
+.contacto {
+    display: flex;  /* solo agarra el tamaño del tamaño que tiene el elemento */
+    flex-direction: column; /* el default lo acomoda en renglones */
+    align-items: center;
+
+
+}
