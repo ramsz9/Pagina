@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+
+}
+
+body {
+    background-color: lightgray ;
+    height: 100vh;
+}
+
+.tarjeta_ {
+    margin: 0 auto;
+    background-color: rgb(253, 236, 153);
+    width: 900px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0 50px 50px 50px;
+    height: 90vh;   /* se pone al 90% del viewport disponible de su clase padre */ 
+    
+}
+
+.contenedor_lista {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    margin: 15px;
+    height: 200px;
+}
+
+
+.pie_pagina {
+    display: flex;
+    background-color: lightblue;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: small;
+    border-style: solid;
+    border-width: 2px;
+    justify-content: center;
+}
+
+body, html {        /* Establece el tamaño de la página con escala 1:1 , es decir a ocupar toda la pantalla*/
+    margin: 0;      /* En conjunto con el tamaño de la Clase="tarjeta" */
+    padding: 0;
+}
+
+hr {
+    border: 2px solid black;
+    margin-top: 15px;
+    width: 900px;
+}
+
+
+
