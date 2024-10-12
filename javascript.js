@@ -1,7 +1,26 @@
-//cadena.charAt(5) .- Muestra el caracter en la posicion 5
-// cadena.TOiNT()
-// cadena.split(" ") .- divide en elementos separados por el espacio en este caso
+const botonAgregar = document.getElementById("boton-agregar-01");
+const inputTarea = document.getElementById("input-nombre-tarea");
+const inputFecha = document.getElementById("input-fecha-tarea");
+const listaTareas = document.getElementById("tareas-por-hacer");
 
-// El autocompletado funciona con un TRIE 
-// Deconstruye cada elemento en nodos y un nodo especial define el final
-// 
+botonAgregar.addEventListener("click", () => {
+  const tarea = inputTarea.value;
+  if (tarea === "") {
+    alert("Debes escribir una tarea");
+    return;
+  }
+  const nuevaTarea = document.createElement("li"); //<li></li>
+  const textoTarea = document.createTextNode(tarea); //valor del input
+  textoTarea.textContent = tarea + " - " + inputFecha.value + " ";
+  nuevaTarea.appendChild(textoTarea); //<li>textoTarea</li>
+  const botonBorrar = document.createElement("button");
+  botonBorrar.textContent = "Terminar";
+  botonBorrar.addEventListener("click", () => {
+    nuevaTarea.style.color = "red";
+  });
+
+  nuevaTarea.appendChild(botonBorrar);
+  listaTareas.appendChild(nuevaTarea);
+  inputTarea.value = "";
+  inputFecha.value = "";
+});
