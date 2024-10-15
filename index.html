@@ -17,12 +17,12 @@
                     
                 
             </div>
-            <a href="pagina2.html">Contacto</a>
             <a href="galeria.html">Galeria</a>
+            <a href="pagina2.html" style="margin-left: 80%;">Contacto</a>
             <h2>Lista de pasatiempos</h2>
             <div class="botones_dobles">
                 <input class="texto_agregar">
-                <button id="boton-agregar-01" class="boton-agregar" >Agregar</button>
+                <button id="boton-agregar-01" class="boton-agregar">Agregar</button>
             </div>
             <div class="contenedor_lista">
                 
@@ -43,44 +43,29 @@
         </main>
         
     </div>
-
     <script>
-        const botonAgregar = document.getElementById(".boton-agregar");
-        const inputTarea = document.querySelector(".texto_agregar");
-
-        const items = document.querySelectorAll(".lista_"); // Seleccionamos todos los li
-        items.forEach((item, index) => {                        // dentro del bloque (elemento ul)
-          if (index % 2 === 0) {
-            item.style.color = "blue"; 
-          } else {
-            item.style.color = "black"; 
-          }
-        });
-
+        const botonAgregar = document.getElementById("boton-agregar-01");
+      const inputTarea = document.querySelector(".texto_agregar");
       botonAgregar.addEventListener("click", () => {
         const tarea = inputTarea.value;
         
+        const listaTareas = document.querySelector(".lista_");
         const nuevaTarea = document.createElement("li"); //<li></li>
         nuevaTarea.textContent = tarea; //<li> valor del input</li>
-        const nuevaFecha = document.createElement("li")
         
         listaTareas.appendChild(nuevaTarea);
         inputTarea.value = "";  
         
-
+        // Solución
         const items = document.querySelectorAll(".lista_ li"); // Seleccionamos todos los li
         items.forEach((item, index) => {                        // dentro del bloque (elemento ul)
           if (index % 2 === 0) {
-            item.style.color = "blue"; 
+            item.style.color = "blue"; // Si el índice es par, azul
           } else {
-            item.style.color = "black"; 
+            item.style.color = "black"; // Si el índice es impar, negro
           }
         });
-
     });
     </script>
-
 </body>
-
-
 </html>

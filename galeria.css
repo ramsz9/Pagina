@@ -5,7 +5,6 @@ h1 {
 
 body {
     background-color: lightgray ;
-    height: 100vh;
 }
 
 .tarjeta_ {
@@ -15,7 +14,7 @@ body {
     border-style: solid;
     border-width: 2px;
     padding: 0 50px 50px 50px;
-    height: 90vh;   /* se pone al 90% del viewport disponible de su clase padre */ 
+    height: 75vh;   /* se pone al 90% del viewport disponible de su clase padre */ 
     
 }
 
@@ -60,5 +59,18 @@ hr {
     width: 900px;
 }
 
+header {
+    margin: auto;
+    width: 1000px;
+    background: rgb(247, 189, 103);
+    color: azure;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-bottom-width: 0px;
+
+}
 
 
