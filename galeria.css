@@ -5,6 +5,7 @@ h1 {
 
 body {
     background-color: lightgray ;
+
 }
 
 .tarjeta_ {
@@ -14,7 +15,7 @@ body {
     border-style: solid;
     border-width: 2px;
     padding: 0 50px 50px 50px;
-       /* se pone al 90% del viewport disponible de su clase padre */ 
+    height: 80vh;
     
 }
 
@@ -29,6 +30,7 @@ body {
     width: 200px; /* Ajusta el tamaño de la imagen */
     margin: 15px;
     height: 200px;
+    margin-top: 100px;
 }
 
 
@@ -36,16 +38,20 @@ body {
     display: flex;
     background-color: lightblue;
     width: 900px;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin: 0 0;
     position: absolute;
     bottom: 0;
-    text-align: center;
     font-size: small;
     border-style: solid;
     border-width: 2px;
     justify-content: center;
+    padding: 0 0 50px 0px;
+    height: min-content;
+    
+}
+
+.pie_pagina h2 {
+    align-items: center;
 }
 
 body, html {        /* Establece el tamaño de la página con escala 1:1 , es decir a ocupar toda la pantalla*/
@@ -85,3 +91,15 @@ header {
     display: flex;
 }
 
+* {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+}
