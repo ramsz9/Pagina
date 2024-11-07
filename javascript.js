@@ -16,7 +16,7 @@ botonAgregar.addEventListener("click", () => {
   const botonBorrar = document.createElement("button");
   botonBorrar.textContent = "Terminar";
   botonBorrar.addEventListener("click", () => {
-    nuevaTarea.style.color = "red";
+    nuevaTarea.remove();
   });
 
   nuevaTarea.appendChild(botonBorrar);
