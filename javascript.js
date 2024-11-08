@@ -1,7 +1,7 @@
-const botonAgregar = document.getElementById("boton-agregar-01");
-const inputTarea = document.getElementById("input-nombre-tarea");
-const inputFecha = document.getElementById("input-fecha-tarea");
-const listaTareas = document.getElementById("tareas-por-hacer");
+const botonAgregar = document.getElementById("boton-agregar-tarea");
+const inputTarea = document.getElementById("entrada-nombre-tarea");
+const inputFecha = document.getElementById("entrada-fecha-tarea");
+const listaTareas = document.getElementById("lista-tareas");
 
 botonAgregar.addEventListener("click", () => {
   const tarea = inputTarea.value;
@@ -9,10 +9,11 @@ botonAgregar.addEventListener("click", () => {
     alert("Debes escribir una tarea");
     return;
   }
-  const nuevaTarea = document.createElement("li"); //<li></li>
-  const textoTarea = document.createTextNode(tarea); //valor del input
+  const nuevaTarea = document.createElement("li");
+  const textoTarea = document.createTextNode(tarea);
   textoTarea.textContent = tarea + " - " + inputFecha.value + " ";
-  nuevaTarea.appendChild(textoTarea); //<li>textoTarea</li>
+  nuevaTarea.appendChild(textoTarea);
+
   const botonBorrar = document.createElement("button");
   botonBorrar.textContent = "Terminar";
   botonBorrar.addEventListener("click", () => {

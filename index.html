@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>tarjeta</title>
+    <title>Tarjeta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="javascript.js">
 </head>
 <body>
-    <div class="tarjeta">
+    <div class="contenedor-tarjeta">
         <header>
-            <h1>SOBRE MI</h1>
+            <h1>Práctica to-do-list</h1>
         </header>
         <main>
             <hr>
-            <div class="consulta_parrafo">
+            <div class="contenido-parrafo">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis, in sequi reiciendis facilis ipsam ratione nisi. Rerum voluptates ea quaerat maxime perferendis esse. Sint, atque cum? Expedita, ab necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui, est eos, sed veniam nam minima, nobis suscipit doloribus beatae accusantium recusandae? Totam, deleniti optio error laboriosam commodi vel ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis vero, dolores a nam molestias sapiente. Eos aliquid adipisci fugiat, vel culpa quos mollitia assumenda quis iure. Excepturi, exercitationem illo.</p>                  
-                    
-                
             </div>
-            <a href="galeria.html">Galeria</a>
+            <a href="galeria.html">Galería</a>
             <a href="pagina2.html" style="margin-left: 80%;">Contacto</a>
             <h2>Lista de Tareas</h2>
-            <div class="botones_dobles">
+            <div class="botones-dobles">
                 <div class="contenedor-doble">
                     <input
-                      id="input-nombre-tarea"
-                      class="input-tarea"
+                      id="entrada-nombre-tarea"
+                      class="entrada-tarea"
                       placeholder="Nombre de la tarea"
                     />
                     <input
-                      id="input-fecha-tarea"
-                      class="input-tarea"
+                      id="entrada-fecha-tarea"
+                      class="entrada-tarea"
                       placeholder="Fecha de entrega"
                       type="date"
                     />
-                    <!--TODO Cambiar foto de perfil-->
-                    <button id="boton-agregar-01" class="boton-agregar">Agregar</button>
-                  </div>
-                  <br />
-                  <ul id="tareas-por-hacer" class="lista-tareas"></ul>
-                
+                    <button id="boton-agregar-tarea" class="boton-agregar">Agregar</button>
+                </div>
+                <br />
+                <ul id="lista-tareas" class="lista-tareas"></ul>
             </div>
-            
-            <footer class="pie_pagina">
+            <footer class="pie-pagina">
                 <h2>Hecho por: Ramiro A. TID31M</h2>
             </footer>
         </main>
-        
     </div>
     <script src="javascript.js"></script>
 </body>
